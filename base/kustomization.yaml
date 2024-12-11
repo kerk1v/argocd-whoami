@@ -1,2 +1,13 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
 resources:
-  - helm-whoami.yaml
+  - https://github.com/k8s-at-home/charts/raw/master/charts/stable/whoami/Chart.yaml
+
+helmCharts:
+  - name: whoami
+    repo: https://charts.bitnami.com/bitnami
+    version: 6.x.x  # Replace with the latest version
+    releaseName: whoami
+    namespace: play
+    valuesFile: values.yaml
