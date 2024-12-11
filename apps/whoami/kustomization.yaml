@@ -1,4 +1,6 @@
 resources:
-  - https://komailo.github.io/helm-charts/charts/komailo-helm-charts/whoami
+  - https://cowboysysop.github.io/charts/cowboysysop/whoami
 patchesStrategicMerge:
   - ingress.yaml
+
+
