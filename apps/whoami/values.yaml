@@ -1,14 +1,8 @@
-replicaCount: 1
-
-service:
-  type: ClusterIP
-  port: 80
-
 ingress:
   enabled: true
   annotations:
-    cert-manager.io/cluster-issuer: "letsencrypt"
-    traefik.ingress.kubernetes.io/router.entrypoints: websecure
+    cert-manager.io/cluster-issuer: letsencrypt
+    kubernetes.io/ingress.class: traefik
   hosts:
     - host: whoami.conxtor.com
       paths:
@@ -18,4 +12,3 @@ ingress:
     - hosts:
         - whoami.conxtor.com
       secretName: whoami-tls
-

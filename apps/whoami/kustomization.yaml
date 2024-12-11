@@ -1,0 +1,4 @@
+resources:
+  - https://komailo.github.io/helm-charts/charts/komailo-helm-charts/whoami
+patchesStrategicMerge:
+  - ingress.yaml
