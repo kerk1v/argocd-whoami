@@ -1,6 +1,8 @@
 resources:
   - https://cowboysysop.github.io/charts/cowboysysop/whoami
-patchesStrategicMerge:
+patches:
   - ingress.yaml
+
+
 
 
