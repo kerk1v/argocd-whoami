@@ -10,6 +10,9 @@ spec:
     chart: whoami
     targetRevision: latest
     helm:
+      helm:
+      valueFiles:
+        - values.yaml
       parameters:
         - name: replicaCount
           value: "1"
