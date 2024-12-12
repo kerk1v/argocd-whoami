@@ -1,8 +1,0 @@
-resources:
-  - https://cowboysysop.github.io/charts/cowboysysop/whoami
-patches:
-  - ingress.yaml
-
-
-
-
